@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-title class="title">Welcome </ion-title>
+    <p class="subTitle">Sign up to create your account</p>
+  </div>
+
+  <form>
+    <div class="ion-padding">
+      <ion-item class="container-field">
+        <ion-input type="text" placeholder="name" class="input"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+
+      <ion-item class="container-field-inside">
+        <ion-input type="email" placeholder="email" class="input"></ion-input>
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-item>
+
+      <ion-item class="container-field-inside">
+        <ion-input
+          type="password"
+          placeholder="password"
+          class="input"
+        ></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+      <ion-item class="container-field-inside">
+        <ion-input
+          placeholder="phone number"
+          type="number"
+          class="input"
+        ></ion-input>
+        <ion-icon name="call-outline"></ion-icon>
+      </ion-item>
+
+      <div class="signinLink">
+        <p>
+          Already a member?
+          <a
+            style="color: #ffc33f; text-decoration: none"
+            [routerLink]="['/login']"
+            >Sign-in now</a
+          >
+        </p>
+      </div>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 30px">
+      <ion-fab-button color="medium" [routerLink]="['/home']">
+        <ion-icon name="chevron-forward"> </ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </form>
+</ion-content>
